@@ -1,0 +1,24 @@
+:root {
+  --bg: #fafafa;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --accent: #007d9c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--fg);
+}
+.site-header, main, .site-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.site-header { display: flex; justify-content: space-between; align-items: center; }
+.site-header nav { display: flex; gap: 1rem; }
+a { color: var(--accent); }
+.logo { font-weight: 700; text-decoration: none; color: var(--fg); }
+.site-footer { color: var(--muted); font-size: .9rem; }
