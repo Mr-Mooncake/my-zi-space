@@ -12,6 +12,6 @@ This is my first post.
 
 Some **bold** text, a [link](https://go.dev), and a code block:
 
-​```go
+```go
 fmt.Println("hello")
-​```
+```
