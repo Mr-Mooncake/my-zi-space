@@ -31,3 +31,8 @@ func parsePost(path	string) (*Post, error) {
 		return nil, err
 	}
 } 
+
+rest, ok := bytes.CutPrefix(raw, []byte("---\n"))
+if !ok {
+	return nil fmt.Error("%s: missing frontmatter(file must start with ---)", path)
+}
